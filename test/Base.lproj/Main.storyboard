@@ -156,28 +156,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZR-Nx-hej">
-                                <rect key="frame" x="160" y="424" width="94" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZR-Nx-hej">
+                                <rect key="frame" x="183" y="138" width="48" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOE-OG-edB">
+                                <rect key="frame" x="191" y="212" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ped-MB-Vd5">
+                                <rect key="frame" x="191" y="296" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF1-Wk-3WA">
+                                <rect key="frame" x="115" y="380" width="184" height="96"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8a-ry-cRV">
+                                <rect key="frame" x="51" y="526" width="314" height="74"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="tintColor" systemColor="systemGray6Color"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="計算">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="calcButtonAction:" destination="P2M-6w-56D" eventType="touchUpInside" id="pU6-Ed-S8C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hna-WC-3dF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rZR-Nx-hej" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="fMd-W0-BEB"/>
-                            <constraint firstItem="rZR-Nx-hej" firstAttribute="centerY" secondItem="tgy-OO-JL6" secondAttribute="centerY" id="qHU-02-lra"/>
+                            <constraint firstItem="sOE-OG-edB" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="0NX-a3-ECe"/>
+                            <constraint firstItem="rZR-Nx-hej" firstAttribute="top" secondItem="hna-WC-3dF" secondAttribute="top" constant="50" id="Dz7-pj-Lxa"/>
+                            <constraint firstItem="Ped-MB-Vd5" firstAttribute="top" secondItem="sOE-OG-edB" secondAttribute="bottom" constant="50" id="IbW-uO-s7O"/>
+                            <constraint firstItem="c8a-ry-cRV" firstAttribute="top" secondItem="ZF1-Wk-3WA" secondAttribute="bottom" constant="50" id="NFF-t9-bEW"/>
+                            <constraint firstItem="rZR-Nx-hej" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="VvE-fC-HpP"/>
+                            <constraint firstItem="Ped-MB-Vd5" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="W0O-GG-O7f"/>
+                            <constraint firstItem="ZF1-Wk-3WA" firstAttribute="top" secondItem="Ped-MB-Vd5" secondAttribute="bottom" constant="50" id="b1D-Ji-BBE"/>
+                            <constraint firstItem="sOE-OG-edB" firstAttribute="top" secondItem="rZR-Nx-hej" secondAttribute="bottom" constant="50" id="emx-4h-rf5"/>
+                            <constraint firstItem="c8a-ry-cRV" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="uHU-oM-ngS"/>
+                            <constraint firstItem="ZF1-Wk-3WA" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="vCV-Hz-3cf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ybj-oB-ybi"/>
                     <connections>
+                        <outlet property="heightTxtFld" destination="sOE-OG-edB" id="b42-fb-y1q"/>
                         <outlet property="label3" destination="rZR-Nx-hej" id="0dh-F0-BZn"/>
+                        <outlet property="resultLbl" destination="ZF1-Wk-3WA" id="bhM-b7-FCH"/>
+                        <outlet property="weightTxtFld" destination="Ped-MB-Vd5" id="Db3-0K-EML"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wL0-uh-naJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3107" y="92"/>
+            <point key="canvasLocation" x="3105.7971014492755" y="91.741071428571431"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="EAw-Vq-KgE">
@@ -250,11 +289,17 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
