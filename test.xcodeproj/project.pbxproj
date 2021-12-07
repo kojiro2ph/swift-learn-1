@@ -21,6 +21,7 @@
 		E68F24D1275DC51B0041C805 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F24D0275DC51B0041C805 /* SecondViewController.swift */; };
 		E68F24D3275DC74E0041C805 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F24D2275DC74E0041C805 /* ThirdViewController.swift */; };
 		E68F24D5275DEC8F0041C805 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F24D4275DEC8F0041C805 /* ListViewController.swift */; };
+		E6943D29275F30D0008D6E4F /* UIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6943D28275F30D0008D6E4F /* UIViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		E68F24D0275DC51B0041C805 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E68F24D2275DC74E0041C805 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		E68F24D4275DEC8F0041C805 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E6943D28275F30D0008D6E4F /* UIViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		E68F2492275DAFC90041C805 = {
 			isa = PBXGroup;
 			children = (
+				E6943D28275F30D0008D6E4F /* UIViewViewController.swift */,
 				E68F249D275DAFC90041C805 /* test */,
 				E68F24B4275DAFCC0041C805 /* testTests */,
 				E68F24BE275DAFCC0041C805 /* testUITests */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E68F24CF275DC1730041C805 /* ModalViewController.swift in Sources */,
+				E6943D29275F30D0008D6E4F /* UIViewViewController.swift in Sources */,
 				E68F24A3275DAFC90041C805 /* ViewController.swift in Sources */,
 				E68F249F275DAFC90041C805 /* AppDelegate.swift in Sources */,
 				E68F24D1275DC51B0041C805 /* SecondViewController.swift in Sources */,
