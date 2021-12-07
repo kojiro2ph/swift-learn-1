@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E613F699275EFA6500D2839C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E613F698275EFA6500D2839C /* ImageViewController.swift */; };
 		E68F249F275DAFC90041C805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F249E275DAFC90041C805 /* AppDelegate.swift */; };
 		E68F24A1275DAFC90041C805 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F24A0275DAFC90041C805 /* SceneDelegate.swift */; };
 		E68F24A3275DAFC90041C805 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68F24A2275DAFC90041C805 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E613F698275EFA6500D2839C /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		E68F249B275DAFC90041C805 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68F249E275DAFC90041C805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E68F24A0275DAFC90041C805 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				E68F24A0275DAFC90041C805 /* SceneDelegate.swift */,
 				E68F24A2275DAFC90041C805 /* ViewController.swift */,
 				E68F24A4275DAFC90041C805 /* Main.storyboard */,
+				E613F698275EFA6500D2839C /* ImageViewController.swift */,
 				E68F24D4275DEC8F0041C805 /* ListViewController.swift */,
 				E68F24D2275DC74E0041C805 /* ThirdViewController.swift */,
 				E68F24D0275DC51B0041C805 /* SecondViewController.swift */,
@@ -276,6 +279,7 @@
 				E68F24D1275DC51B0041C805 /* SecondViewController.swift in Sources */,
 				E68F24D3275DC74E0041C805 /* ThirdViewController.swift in Sources */,
 				E68F24A1275DAFC90041C805 /* SceneDelegate.swift in Sources */,
+				E613F699275EFA6500D2839C /* ImageViewController.swift in Sources */,
 				E68F24D5275DEC8F0041C805 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

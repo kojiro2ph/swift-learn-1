@@ -173,18 +173,18 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZF1-Wk-3WA">
-                                <rect key="frame" x="115" y="380" width="184" height="96"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <rect key="frame" x="137.5" y="350" width="139.5" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8a-ry-cRV">
-                                <rect key="frame" x="51" y="526" width="314" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8a-ry-cRV">
+                                <rect key="frame" x="319" y="298" width="65" height="38"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="計算">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="calcButtonAction:" destination="P2M-6w-56D" eventType="touchUpInside" id="pU6-Ed-S8C"/>
@@ -197,12 +197,12 @@
                             <constraint firstItem="sOE-OG-edB" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="0NX-a3-ECe"/>
                             <constraint firstItem="rZR-Nx-hej" firstAttribute="top" secondItem="hna-WC-3dF" secondAttribute="top" constant="50" id="Dz7-pj-Lxa"/>
                             <constraint firstItem="Ped-MB-Vd5" firstAttribute="top" secondItem="sOE-OG-edB" secondAttribute="bottom" constant="50" id="IbW-uO-s7O"/>
-                            <constraint firstItem="c8a-ry-cRV" firstAttribute="top" secondItem="ZF1-Wk-3WA" secondAttribute="bottom" constant="50" id="NFF-t9-bEW"/>
+                            <constraint firstItem="hna-WC-3dF" firstAttribute="trailing" secondItem="c8a-ry-cRV" secondAttribute="trailing" constant="30" id="K9J-o4-OpA"/>
+                            <constraint firstItem="ZF1-Wk-3WA" firstAttribute="top" secondItem="Ped-MB-Vd5" secondAttribute="bottom" constant="20" id="Nf7-wN-wZR"/>
                             <constraint firstItem="rZR-Nx-hej" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="VvE-fC-HpP"/>
                             <constraint firstItem="Ped-MB-Vd5" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="W0O-GG-O7f"/>
-                            <constraint firstItem="ZF1-Wk-3WA" firstAttribute="top" secondItem="Ped-MB-Vd5" secondAttribute="bottom" constant="50" id="b1D-Ji-BBE"/>
                             <constraint firstItem="sOE-OG-edB" firstAttribute="top" secondItem="rZR-Nx-hej" secondAttribute="bottom" constant="50" id="emx-4h-rf5"/>
-                            <constraint firstItem="c8a-ry-cRV" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="uHU-oM-ngS"/>
+                            <constraint firstItem="c8a-ry-cRV" firstAttribute="top" secondItem="hna-WC-3dF" secondAttribute="top" constant="210" id="uLp-cb-Oei"/>
                             <constraint firstItem="ZF1-Wk-3WA" firstAttribute="centerX" secondItem="tgy-OO-JL6" secondAttribute="centerX" id="vCV-Hz-3cf"/>
                         </constraints>
                     </view>
@@ -255,11 +255,33 @@
                         <viewLayoutGuide key="safeArea" id="f1c-Qx-fdf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="リスト" id="abS-nG-0eZ"/>
+                    <navigationItem key="navigationItem" title="リスト" id="abS-nG-0eZ">
+                        <barButtonItem key="rightBarButtonItem" title="進む" id="BL7-YK-emk">
+                            <connections>
+                                <segue destination="lsz-cr-agw" kind="show" id="F5b-lQ-FYT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pD1-nA-PI3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3792.753623188406" y="91.741071428571431"/>
+        </scene>
+        <!--IMAGE-->
+        <scene sceneID="Nms-da-9dp">
+            <objects>
+                <viewController id="lsz-cr-agw" customClass="ImageViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iam-FR-mpo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nwe-GE-zBU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="IMAGE" id="DCn-b7-XiC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBl-Bn-gme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4457" y="92"/>
         </scene>
         <!--Modal View Controller-->
         <scene sceneID="EAw-Vq-KgE">

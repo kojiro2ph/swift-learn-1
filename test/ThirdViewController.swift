@@ -25,7 +25,13 @@ class ThirdViewController: UIViewController {
     
 
     @IBAction func calcButtonAction(_ sender: Any) {
+        if heightTxtFld.text == "" {
+            heightTxtFld.text = "0"
+        }
         let h = Double(heightTxtFld.text!)
+        if weightTxtFld.text == "" {
+            weightTxtFld.text = "0"
+        }
         let w = Double(weightTxtFld.text!)
         resultLbl.text = calcBMI(height: h!, weight: w!)
     }
